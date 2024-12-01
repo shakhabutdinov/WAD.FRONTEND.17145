@@ -1,0 +1,33 @@
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-events {
+  background-color: #007bff;
+}
+
+.btn-events:hover {
+  background-color: #0056b3;
+}
+
+.btn-participants {
+  background-color: #28a745;
+}
+
+.btn-participants:hover {
+  background-color: #1c7430;
+}
