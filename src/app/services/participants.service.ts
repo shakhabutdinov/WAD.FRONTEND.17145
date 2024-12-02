@@ -10,29 +10,27 @@ import {
   providedIn: 'root',
 })
 export class ParticipantsService {
-  private apiurl = 'https://localhost:7293/api';
+  private apiurl = 'https://localhost:7175/api';
   constructor(private http: HttpClient) {}
   getItems(): Observable<ParticipantsType[]> {
-    return this.http.get<ParticipantsType[]>(this.apiurl + '/EventAttendees');
+    return this.http.get<ParticipantsType[]>(this.apiurl + '/Participants');
   }
 
   getEvents(id: number) {
-    return this.http.get<ParticipantsType>(
-      `${this.apiurl}/EventAttendees/${id}`
-    );
+    return this.http.get<ParticipantsType>(`${this.apiurl}/Participants/${id}`);
   }
 
   deleteParticipants(id: number) {
-    return this.http.delete(`${this.apiurl}/EventAttendees/${id}`);
+    return this.http.delete(`${this.apiurl}/Participants/${id}`);
   }
 
   createParticipants(participants: any) {
     return this.http.post<CreateParticipants>(
-      `${this.apiurl}/EventAttendees`,
+      `${this.apiurl}/Participants`,
       participants
     );
   }
   updateParticipants(id: number, events: any) {
-    return this.http.put(`${this.apiurl}/EventAttendees/${id}`, events);
+    return this.http.put(`${this.apiurl}/Participants/${id}`, events);
   }
 }

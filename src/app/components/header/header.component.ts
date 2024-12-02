@@ -17,10 +17,7 @@ export class HeaderComponent {
 
   ngOnInit() {
     this.router.events.subscribe(() => {
-      // Get the current route path
       const currentRoute = this.router.url;
-      // Check if the current route path matches 'participants' or 'events'
-      console.log(currentRoute);
 
       this.disableCreateButton = !(
         currentRoute.includes('/participants') ||
@@ -28,9 +25,7 @@ export class HeaderComponent {
       );
     });
   }
-  toggleAddTask() {
-    console.log('add');
-  }
+  toggleAddTask() {}
   btnClick(name: string) {
     this.router.navigateByUrl(name);
   }

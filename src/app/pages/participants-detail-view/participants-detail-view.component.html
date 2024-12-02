@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <h1 class="numberOfEvent">About Participant</h1>
+  <div class="items">
+    <div class="itemWrapper">
+      <h1 class="Title">Participant Name</h1>
+      <h2 class="name">{{ participantsDetail.participantName }}</h2>
+    </div>
+    <div class="itemWrapper">
+      <h1 class="Title">Email</h1>
+      <h2 class="name">{{ participantsDetail.email }}</h2>
+    </div>
+    <div class="itemWrapper">
+      <h1 class="Title">Ticket Type</h1>
+      <h2 class="name">{{ participantsDetail.ticketType }}</h2>
+    </div>
+  </div>
+
+  <h1 class="numberOfEvent">Events involved</h1>
+  <div class="items">
+    <div class="itemWrapper">
+      <h1 class="Title">Event Name</h1>
+      <h2 class="name">{{ participantsDetail.events.eventName }}</h2>
+    </div>
+    <div class="itemWrapper">
+      <h1 class="Title">Date</h1>
+      <h2 class="name">{{ participantsDetail.events.date }}</h2>
+    </div>
+    <div class="itemWrapper">
+      <h1 class="Title">Venue</h1>
+      <h2 class="name">{{ participantsDetail.events.venue }}</h2>
+    </div>
+    <div class="itemWrapper">
+      <h1 class="Title">Organizer</h1>
+      <h2 class="name">{{ participantsDetail.events.organizer }}</h2>
+    </div>
+  </div>
+</div>

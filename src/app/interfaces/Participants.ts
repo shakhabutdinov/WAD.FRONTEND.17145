@@ -7,15 +7,15 @@ export interface EventManagement {
 }
 export interface ParticipantsType {
   id: number;
-  attendeeName: string;
+  participantName: string;
   email: string;
   ticketType: string;
   eventId: number;
-  eventManagement: EventManagement;
+  events: EventManagement;
 }
 
 export interface CreateParticipants {
-  attendeeName: string;
+  participantName: string;
   email: string;
   ticketType: string;
   eventId: number;

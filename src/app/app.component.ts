@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTableModule } from '@angular/material/table';
 import { ReactiveFormsModule } from '@angular/forms';
-import { TableComponent } from './components/table/table.component';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +13,7 @@ import { TableComponent } from './components/table/table.component';
   styleUrl: './app.component.scss',
   imports: [
     RouterOutlet,
-    RouterLink,
-    TableComponent,
+    HeaderComponent,
     FormsModule,
     MatSlideToggleModule,
     MatTableModule,
