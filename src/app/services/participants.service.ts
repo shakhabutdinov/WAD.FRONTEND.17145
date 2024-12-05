@@ -10,7 +10,7 @@ import {
   providedIn: 'root',
 })
 export class ParticipantsService {
-  private apiurl = 'https://localhost:7175/api';
+  private apiurl = 'https://localhost:7100/api';
   constructor(private http: HttpClient) {}
   getItems(): Observable<ParticipantsType[]> {
     return this.http.get<ParticipantsType[]>(this.apiurl + '/Participants');
