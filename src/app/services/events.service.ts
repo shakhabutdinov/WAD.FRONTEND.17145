@@ -7,7 +7,7 @@ import { CreateEvents, EventsType } from '../interfaces/EventType';
   providedIn: 'root',
 })
 export class EventsService {
-  private apiurl = 'https://localhost:7175/api';
+  private apiurl = 'https://localhost:7100/api';
   constructor(private http: HttpClient) {}
 
   getItems(): Observable<EventsType[]> {
